@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './login.css';
+import firebase from '../../config/./firebase';
+import 'firebase/auth';
 
 function Login() {
+
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+    const [msgTipo, setMsgTipo] = useState();
+
+    function logar() {
+
+        firebase.auth().signInWithEmailAndPassword(email, senha).then
+        
+        (resultado => {setMsgTipo('sucesso');
+        }).catch(erro => {setMsgTipo('erro');})
+    
+    }
+
     return (
         <div className='login-content d-flex align-items-center'>
             <main className="form-signin mx-auto">
                 <form>
                     <h1 className='h1h1 text-center text-white'>Login</h1>
 
-                    <input type="email" className="form-control my-2" id="floatingInput" placeholder="react@gmail.com"/>
-                    <input type="password" className="form-control my-2" id="floatingPassword" placeholder="******" />
+                    <input onChange={(e) => setEmail(e.target.value)} type="email" className="email form-control my-2" id="email" placeholder="react@gmail.com" />
+                    <input onChange={(e) => setSenha(e.target.value)} type="password" className="senha form-control my-2" id="senha" placeholder="******" />
 
-                    <button className="w-100 btn btn-lg btn-login" type="submit">Entrar</button>
-                    <div className='text-center msg-login text-white my-4'>
-                        <span>Uau! Você está <strong>conectado!</strong>&#128512;</span>
-                        <span>Ops! E-mail ou senha <strong>incorretos!</strong>&#128552;</span>
+                    <button onClick={ logar } className="w-100 btn btn-lg btn-login" type="button">Entrar</button>
+
+                    <div className='text-center msg-login my-4'>
+                        {msgTipo === 'sucesso' && <span>Você está <strong>conectado!</strong> &#128512;</span>}
+                        {msgTipo === 'erro' && <span>E-mail ou senha <strong>inválidos!</strong> &#128552;</span>}
                     </div>
+
                     <div className='text-center opcoes-login'>
                         <a href="" className='mx-2'>Recuperar Senha</a>
                         <a href="" className='mx-2'>Cadastre-se</a>

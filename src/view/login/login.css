@@ -10,6 +10,19 @@
     background-color: blueviolet;
 }
 
+.msg-login{
+    color: white;
+    transition: ease-in 1s;
+}
+
+.email{
+    width:100%;
+}
+
+.senha{
+    width:100%;
+}
+
 .btn-login{
     background-color: purple;
     color:white;
