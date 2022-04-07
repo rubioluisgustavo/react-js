@@ -1,57 +1,59 @@
-.login-content{
+.login-content {
     width: 100%;
     position: absolute;
     align-items: center;
-    top: 0; 
+    top: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
     right: 0;
     margin: auto;
     background-color: blueviolet;
 }
 
-.msg-login{
+.msg-login {
     color: white;
-    transition: ease-in 1s;
+    width: auto;
+    height: auto;
 }
 
-.email{
-    width:100%;
+.email {
+    width: 100%;
 }
 
-.senha{
-    width:100%;
+.senha {
+    width: 100%;
 }
 
-.btn-login{
+.btn-login {
     background-color: purple;
-    color:white;
+    color: white;
     background-size: 100%;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     background-color: rgb(190, 121, 255);
     transition: ease-in 0.1s;
     color: black;
 }
 
-.ano{
+.ano {
     color: white;
     font-weight: bold;
 }
 
-.h1h1{
+h1 {
     font-weight: bolder;
     text-shadow: white;
 }
 
-.opcoes-login, .opcoes-login a{
+.opcoes-login,
+.opcoes-login a {
     padding-top: 1vh;
     text-decoration: none;
     color: white;
 }
 
-.opcoes-login a:hover{
+.opcoes-login a:hover {
     color: black;
     transition: all 0.3s;
 }

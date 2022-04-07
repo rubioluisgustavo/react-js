@@ -1,14 +1,33 @@
-.form-login{
-    max-width: 650px;
+.form-cadastro {
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: blueviolet;
 }
 
-.btn-cadastro{
+.h1h1 {
+    font-weight: bolder;
+    text-shadow: white;
+}
+
+.msg-cad {
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+.btn-cadastro {
     background-color: purple;
-    color:white;
+    color: white;
     background-size: 100%;
 }
 
-.btn-cadastro:hover{
+.btn-cadastro:hover {
     background-color: rgb(190, 121, 255);
     transition: ease-in 0.1s;
     color: black;
