@@ -1,6 +1,11 @@
 .login-content{
     width: 100%;
-    padding: 15%;
+    position: absolute;
+    align-items: center;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
     margin: auto;
     background-color: blueviolet;
 }
@@ -12,8 +17,8 @@
 }
 
 .btn-login:hover{
-    background-color: gray;
-    transition: ease-in 0.3s;
+    background-color: rgb(190, 121, 255);
+    transition: ease-in 0.1s;
     color: black;
 }
 
@@ -24,7 +29,7 @@
 
 .h1h1{
     font-weight: bolder;
-    text-shadow: white 1px 1px 4px;
+    text-shadow: white;
 }
 
 .opcoes-login, .opcoes-login a{

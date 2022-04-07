@@ -12,7 +12,11 @@ function Login() {
                     <input type="password" className="form-control my-2" id="floatingPassword" placeholder="******" />
 
                     <button className="w-100 btn btn-lg btn-login" type="submit">Entrar</button>
-                    <div className='opcoes-login'>
+                    <div className='text-center msg-login text-white my-4'>
+                        <span>Uau! Você está <strong>conectado!</strong>&#128512;</span>
+                        <span>Ops! E-mail ou senha <strong>incorretos!</strong>&#128552;</span>
+                    </div>
+                    <div className='text-center opcoes-login'>
                         <a href="" className='mx-2'>Recuperar Senha</a>
                         <a href="" className='mx-2'>Cadastre-se</a>
                     </div>
