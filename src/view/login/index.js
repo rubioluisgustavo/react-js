@@ -15,7 +15,6 @@ function Login() {
 
             .then(resultado => { setMsgTipo('sucesso'); })
             .catch(erro => { setMsgTipo('erro'); })
-
     }
 
     return (
