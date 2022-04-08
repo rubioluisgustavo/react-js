@@ -33,11 +33,6 @@ function Login() {
                         {msgTipo === 'erro' && <span>E-mail ou senha <strong>inválidos!</strong> &#128552;</span>}
                     </div>
 
-                    <div className='text-center opcoes-login'>
-                        <a href="" className='mx-2'>Recuperar Senha</a>
-                        <a href="" className='mx-2'>Cadastre-se</a>
-                    </div>
-                    <p className="text-center mt-5 mb-3 ano">&copy; 1996-2022 - por Luis Rubio</p>
                 </form>
             </main>
         </div>
